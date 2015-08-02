@@ -26,8 +26,8 @@ if(!SD.begin(CS_pin))
 void loop() 
 {
   // put your main code here, to run repeatedly:
-String dataString = "Hello";
-File dataFile = SD.open("log.txt", FILE_WRITE);
+String dataString = "writing data to log2";
+File dataFile = SD.open("log2.txt", FILE_WRITE);
 if(dataFile)
   {
   dataFile.println(dataString);
