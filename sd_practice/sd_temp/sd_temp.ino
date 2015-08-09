@@ -1,6 +1,9 @@
 #include <SD.h>
 #include <SPI.h>
-
+//This code takes temperature readings from a lm35 temperature sensor
+//and display the reading serially to the serial monitor. In addition
+//the temperature in farenheit is written to sd card and can be read with
+//read_log
 int t=0;
 int sensor=A1; // sets A1 as the sensor input
 float temp;

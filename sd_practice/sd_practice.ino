@@ -5,7 +5,7 @@
 //int MISO=50; //D0 pin 50 mega 2560
 //int SCLK=52;    //sd card clock goes to pin 52 set by default
 int CS_pin=10;
-int pow_pin=8;
+//int pow_pin=8;
 
 void setup() {
   // put your setup code here, to run once:
@@ -13,8 +13,8 @@ void setup() {
 Serial.begin(9600);
 Serial.println("Initializing Card");
 pinMode(CS_pin, OUTPUT);
-pinMode(pow_pin, OUTPUT);
-digitalWrite(pow_pin,HIGH);
+//pinMode(pow_pin, OUTPUT);
+//digitalWrite(pow_pin,HIGH);
 //check if card ready
 if(!SD.begin(CS_pin))
   {
@@ -27,6 +27,8 @@ void loop()
 {
   // put your main code here, to run repeatedly:
 String dataString = "writing data to log2";
+
+
 File dataFile = SD.open("log2.txt", FILE_WRITE);
 if(dataFile)
   {
