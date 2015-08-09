@@ -13,7 +13,7 @@ float tempf;
 //int MOSI=51;//DI pin 51 2560
 //int MISO=50; //D0 pin 50 mega 2560
 //int SCLK=52;    //sd card clock goes to pin 52 set by default
-int CS_pin=10;
+int CS_pin=53;
 
 void setup() {
   // put your setup code here, to run once:

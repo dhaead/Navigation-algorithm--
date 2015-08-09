@@ -23,7 +23,7 @@
 #include <SPI.h>
 #include <SD.h>
 
-const int chipSelect = 10;
+const int chipSelect = 53;
 
 void setup()
 {
@@ -46,7 +46,7 @@ void setup()
 
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
-  File dataFile = SD.open("temps.txt");
+  File dataFile = SD.open("sph1.csv");
 
   // if the file is available, write to it:
   if (dataFile) {
